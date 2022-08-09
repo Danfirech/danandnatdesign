@@ -7,12 +7,19 @@ const Container = Styled.div`
   background-color: pink;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+
 `;
 
 const Header = Styled.div`
 height: 100px;
-width: 100vw;
+width: 100%;
 background-color: black;
+color: white;
+display: flex;
+align-items: center;
+padding-left: 90px;
+font-size: 100px;
 `;
 
 const InspoPic = Styled.div`
@@ -34,7 +41,7 @@ clip-path: ellipse(23% 49% at 48% 51%);
 const OurInspoSection = () => {
   return (
     <div>
-      <Header></Header>
+      <Header>Our Inspo</Header>
       <Container>
         <InspoPic>Test</InspoPic>
         <InspoPicTwo></InspoPicTwo>
