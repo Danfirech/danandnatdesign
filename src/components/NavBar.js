@@ -1,11 +1,14 @@
-import React from "react";
-import Styled from "styled-components";
+import React from 'react';
+import Styled from 'styled-components';
+import Logo from '../media/logo.png';
+import { Link } from 'react-router-dom';
 
 const Container = Styled.div`
 height: 100px;
 width: 100%;
 background-color: Black;
 display: flex;
+/* background-color: #313130; */
 background-color: black;
 justify-content: space-between;
 `;
@@ -17,6 +20,13 @@ display: flex;
 color: white;
 align-items: center;
 padding-left: 100px;
+ .logo-img {
+    padding-top: 40px;
+    padding-left: 20px;
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+  }
 `;
 
 const Right = Styled.div`
@@ -27,16 +37,33 @@ color: white;
 align-items: center;
 justify-content: space-between;
 padding-right: 100px;
+cursor: pointer; 
+
+.about {
+  :hover {
+    color: #e3e67d;
+  }
+}
+
+.contact {
+  :hover {
+    color: #e3e67d;
+  }
+}
 `;
 
 const NavBar = () => {
   return (
     <div>
       <Container>
-        <Left>Test</Left>
+        <Left>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <img src={Logo} alt="logo" className="logo-img" />
+          </Link>
+        </Left>
         <Right>
-          <div>Test</div>
-          <div>Test</div>
+          <div className="about">About</div>
+          <div className="contact">Contact</div>
         </Right>
       </Container>
     </div>
