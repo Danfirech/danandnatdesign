@@ -12,22 +12,49 @@ const Container = styled.div`
 
   .one {
     :hover {
-      color: #bfddea;
+      color: #029c54;
+      font-weight: bold;
     }
   }
   .two {
     :hover {
-      color: #e3e67d;
+      color: #dac6fb;
     }
   }
   .three {
     :hover {
-      color: #e5ccd1;
+      color: #fcff67;
     }
   }
   .four {
     :hover {
-      color: #f17957;
+      color: #bee6ee;
+    }
+  }
+  .five {
+    font-weight: bold;
+    border: 2px groove blue;
+    :hover {
+      color: #f55a1d;
+    }
+  }
+  .six {
+    :hover {
+      color: #029c54;
+    }
+  }
+  .seven {
+    font-weight: bold;
+    border: 2px groove #e3e67d;
+
+    :hover {
+      color: #feb2ce;
+    }
+  }
+  .eight {
+    font-weight: bold;
+    :hover {
+      color: #bee6ee;
     }
   }
 `;
@@ -38,6 +65,7 @@ const Word = styled.div`
   color: white;
   margin-right: 30px;
   font-size: 180px;
+
   display: flex;
   :hover {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🔥</text></svg>")
@@ -54,10 +82,10 @@ const Header = () => {
         <Word className="two">Your</Word>
         <Word className="three">Website</Word>
         <Word className="four">With</Word>
-        <Word className="two">Dan</Word>
-        <Word className="one">and</Word>
-        <Word className="four">Nat</Word>
-        <Word className="three">Designs</Word>
+        <Word className="five">Dan</Word>
+        <Word className="six">and</Word>
+        <Word className="seven">Nat</Word>
+        <Word className="eight">Designs</Word>
       </Container>
     </div>
   );
