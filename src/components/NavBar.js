@@ -1,26 +1,25 @@
 import React from 'react';
-import Styled from 'styled-components';
+import styled from 'styled-components';
 import Logo from '../media/logo.png';
 import { Link } from 'react-router-dom';
 
-const Container = Styled.div`
-height: 100px;
-width: 100%;
-background-color: Black;
-display: flex;
-/* background-color: #313130; */
-background-color: black;
-justify-content: space-between;
+const Container = styled.div`
+  height: 100px;
+  width: 100%;
+  background-color: Black;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
 `;
 
-const Left = Styled.div`
-height: 100%;
-width: 20%;
-display: flex;
-color: white;
-align-items: center;
-padding-left: 100px;
- .logo-img {
+const Left = styled.div`
+  height: 100%;
+  width: 20%;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding-left: 100px;
+  .logo-img {
     padding-top: 40px;
     padding-left: 20px;
     height: 120px;
@@ -29,27 +28,28 @@ padding-left: 100px;
   }
 `;
 
-const Right = Styled.div`
-height: 100%;
-width: 10%;
-display: flex;
-color: white;
-align-items: center;
-justify-content: space-between;
-padding-right: 100px;
-cursor: pointer; 
+const Right = styled.div`
+  height: 100%;
+  width: 10%;
+  font-size: 20px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 100px;
+  cursor: pointer;
 
-.about {
-  :hover {
-    color: #e3e67d;
+  .about {
+    :hover {
+      color: #e3e67d;
+    }
   }
-}
 
-.contact {
-  :hover {
-    color: #e3e67d;
+  .contact {
+    :hover {
+      color: #e3e67d;
+    }
   }
-}
 `;
 
 const NavBar = () => {
