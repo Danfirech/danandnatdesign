@@ -11,11 +11,11 @@ const Container = styled.div`
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <NavBar />
       <ContactMain />
       <Footer />
-    </>
+    </div>
   );
 };
 
