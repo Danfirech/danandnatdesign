@@ -1,14 +1,14 @@
-import React from 'react';
-import Styled from 'styled-components';
-import NavBar from '../components/NavBar';
-import Header from '../components/Header';
-import OurInspoSection from '../components/OurInspoSection';
-import ServicesSection from '../components/ServicesSection';
-import LetsGetStartedSection from '../components/LetsGetStartedSection';
+import React from "react";
+import styled from "styled-components";
+import NavBar from "../components/NavBar";
+import Header from "../components/HomePage/Header";
+import OurInspoSection from "../components/HomePage/OurInspoSection";
+import ServicesSection from "../components/HomePage/ServicesSection";
+import LetsGetStartedSection from "../components/HomePage/LetsGetStartedSection";
 
-const Container = Styled.div`
-height: 100%;
-width: 100%;
+const Container = styled.div`
+  height: 100%;
+  width: 100%;
 `;
 
 const Home = () => {
